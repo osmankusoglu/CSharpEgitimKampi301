@@ -10,15 +10,7 @@ namespace CSharpEgitimKampi301.EntityLayer.Concreate
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public int CategoryStatus { get; set; }
+        public bool CategoryStatus { get; set; }
+        public List<Product> Products { get; set; }
     }
 }
-
-
-/*
- Field-Variable-Property
- */
-
-/*
- int x; -> Field
- */
