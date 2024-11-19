@@ -16,5 +16,20 @@ namespace CSharpEgitimKampi301.EFProject
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            enti
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
