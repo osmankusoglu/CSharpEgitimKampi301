@@ -60,5 +60,10 @@ namespace CSharpEgitimKampi301.EFProject
             db.SaveChanges();
             MessageBox.Show("Rehber başarıyla silindi.");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
