@@ -26,13 +26,20 @@ namespace CSharpEgitimKampi301.EFProject
         private void FrmStatistics_Load(object sender, EventArgs e)
         {
             lblLocationCount.Text = db.Location.Count().ToString();
+
             lblSumCapacity.Text = db.Location.Sum(x => x.Capacity).ToString();
+
             lblGuideCount.Text = db.Guide.Count().ToString();
+
             lblAvgCapacity.Text = db.Location.Average(x => x.Capacity).ToString();
+
             lblAvgLocationPrice.Text = db.Location.Average(x => x.Price).ToString() + "₺";
+
             int lastCountryId = db.Location.Max(x => x.LocationId);
             lblLastCountryName.Text = db.Location.Where(x=>x.LocationId == lastCountryId).Select(y=>y.Country).FirstOrDefault();
+
             lblCappadociaLocationCapacity.Text = db.Location.Where(x=>x.City == "Kapadokya").Select(y=>y.Capacity).FirstOrDefault().ToString();
+
             lblTurkiyeCapacityAvg.Text = db.Location.Where(x => x.Country == "Türkiye").Average(y=>y.Capacity).ToString();
 
             var romeGuideId = db.Location.Where(x=>x.City == "Roma Turistik").Select(y =>y.GuideId).FirstOrDefault();
